@@ -50,7 +50,7 @@
     </param>
     <param>
       <key>max_nouts</key>
-      <value>0</value>
+      <value>16000</value>
     </param>
     <param>
       <key>qt_qss_theme</key>
@@ -58,7 +58,7 @@
     </param>
     <param>
       <key>realtime_scheduling</key>
-      <value></value>
+      <value>1</value>
     </param>
     <param>
       <key>run_command</key>
@@ -286,7 +286,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>512</value>
+      <value>2048</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -331,96 +331,6 @@
     <param>
       <key>stop</key>
       <value>100000</value>
-    </param>
-    <param>
-      <key>rangeType</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>widget</key>
-      <value>counter_slider</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(280, 20)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>r_d</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>float(r_interpol)/float(r_decimation)</value>
-    </param>
-  </block>
-  <block>
-    <key>variable_qtgui_range</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1032, 176)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value>1,3,1,1</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>r_decimation</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value></value>
-    </param>
-    <param>
-      <key>min_len</key>
-      <value>200</value>
-    </param>
-    <param>
-      <key>orient</key>
-      <value>Qt.Horizontal</value>
-    </param>
-    <param>
-      <key>start</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>step</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>stop</key>
-      <value>100</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -568,7 +478,7 @@
     </param>
     <param>
       <key>label</key>
-      <value>Sound</value>
+      <value>Ignore me, just obtaining space</value>
     </param>
     <param>
       <key>true</key>
@@ -577,70 +487,6 @@
     <param>
       <key>type</key>
       <value>bool</value>
-    </param>
-  </block>
-  <block>
-    <key>variable_qtgui_range</key>
-    <param>
-      <key>comment</key>
-      <value>Reducing this can improve quality.
-But it also increases the time!</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>70000</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(960, 24)</value>
-    </param>
-    <param>
-      <key>gui_hint</key>
-      <value>2,3,1,1</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>twidth</value>
-    </param>
-    <param>
-      <key>label</key>
-      <value></value>
-    </param>
-    <param>
-      <key>min_len</key>
-      <value>200</value>
-    </param>
-    <param>
-      <key>orient</key>
-      <value>Qt.Horizontal</value>
-    </param>
-    <param>
-      <key>start</key>
-      <value>100</value>
-    </param>
-    <param>
-      <key>step</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>stop</key>
-      <value>500000</value>
-    </param>
-    <param>
-      <key>rangeType</key>
-      <value>float</value>
-    </param>
-    <param>
-      <key>widget</key>
-      <value>counter_slider</value>
     </param>
   </block>
   <block>
@@ -903,7 +749,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1080, 380)</value>
+      <value>(784, 580)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -915,62 +761,15 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>maxoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>quad_rate</key>
       <value>qrate</value>
-    </param>
-  </block>
-  <block>
-    <key>audio_sink</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>device_name</key>
-      <value>hw:0,0</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(1104, 620)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>audio_sink_0</value>
-    </param>
-    <param>
-      <key>num_inputs</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>ok_to_block</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>48000</value>
     </param>
   </block>
   <block>
@@ -993,7 +792,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(872, 784)</value>
+      <value>(792, 976)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1001,15 +800,15 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>id</key>
-      <value>blocks_complex_to_mag_0</value>
+      <value>blocks_complex_to_mag_0_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1017,7 +816,11 @@ But it also increases the time!</value>
     </param>
   </block>
   <block>
-    <key>blocks_copy</key>
+    <key>blocks_file_source</key>
+    <param>
+      <key>begin_tag</key>
+      <value>pmt.PMT_NIL</value>
+    </param>
     <param>
       <key>alias</key>
       <value></value>
@@ -1035,12 +838,12 @@ But it also increases the time!</value>
       <value>True</value>
     </param>
     <param>
-      <key>enabled</key>
-      <value>sound</value>
+      <key>file</key>
+      <value>d:\Program Files (x86)\SDRSharp\NOAA15\SDRSharp_20190112_173333Z_138063526Hz_IQ_twidth200.raw</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1128, 492)</value>
+      <value>(464, 308)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1048,23 +851,23 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>id</key>
-      <value>blocks_copy_0</value>
+      <value>blocks_file_source_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>showports</key>
-      <value>True</value>
+      <value>20000</value>
     </param>
     <param>
       <key>type</key>
-      <value>float</value>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>repeat</key>
+      <value>False</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1134,54 +937,11 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(400, 312)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_float_to_complex_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>vlen</key>
       <value>1</value>
     </param>
-  </block>
-  <block>
-    <key>blocks_float_to_complex</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
     <param>
       <key>_coordinate</key>
-      <value>(1088, 688)</value>
+      <value>(1080, 912)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1189,15 +949,15 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>id</key>
-      <value>blocks_float_to_complex_1</value>
+      <value>blocks_float_to_complex_1_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1302,7 +1062,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>const</key>
-      <value>1000</value>
+      <value>6500</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1314,58 +1074,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(896, 388)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_multiply_const_vxx_0</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>complex</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>vlen</key>
-      <value>1</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_multiply_const_vxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>const</key>
-      <value>22000</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(696, 548)</value>
+      <value>(1008, 588)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1381,11 +1090,11 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>maxoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>minoutbuf</key>
-      <value>0</value>
+      <value>20000</value>
     </param>
     <param>
       <key>vlen</key>
@@ -1416,7 +1125,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(648, 644)</value>
+      <value>(576, 644)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1444,11 +1153,7 @@ But it also increases the time!</value>
     </param>
   </block>
   <block>
-    <key>blocks_wavfile_sink</key>
-    <param>
-      <key>bits_per_sample</key>
-      <value>8</value>
-    </param>
+    <key>note</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -1458,20 +1163,12 @@ But it also increases the time!</value>
       <value></value>
     </param>
     <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
       <key>_enabled</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>file</key>
-      <value>c:\Users\crazy\Documents\GnuRadio\Results\SDRSharp_20190112_173333Z_138063526Hz_AF.wav</value>
+      <value>True</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1112, 820)</value>
+      <value>(776, 708)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1479,125 +1176,11 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>id</key>
-      <value>blocks_wavfile_sink_0</value>
+      <value>note_0</value>
     </param>
     <param>
-      <key>nchan</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>48000</value>
-    </param>
-  </block>
-  <block>
-    <key>blocks_wavfile_source</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value>Edit this path to yours.</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>file</key>
-      <value>r"d:\Program Files (x86)\SDRSharp\NOAA15\SDRSharp_20190112_173333Z_138063526Hz_IQ.wav"</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(16, 312)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_wavfile_source_0_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>nchan</key>
-      <value>2</value>
-    </param>
-    <param>
-      <key>repeat</key>
-      <value>False</value>
-    </param>
-  </block>
-  <block>
-    <key>freq_xlating_fir_filter_xxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>center_freq</key>
-      <value>xfreq</value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>decim</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(640, 392)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>freq_xlating_fir_filter_xxx_0_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>samp_rate</key>
-      <value>samp_rate</value>
-    </param>
-    <param>
-      <key>taps</key>
-      <value>firdes.low_pass(1,samp_rate,BW/2,twidth)</value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>ccc</value>
+      <key>note</key>
+      <value>Workaround ... </value>
     </param>
   </block>
   <block>
@@ -1616,7 +1199,38 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(816, 708)</value>
+      <value>(776, 748)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>note_1</value>
+    </param>
+    <param>
+      <key>note</key>
+      <value>left res. won't work</value>
+    </param>
+  </block>
+  <block>
+    <key>note</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(568, 940)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1647,7 +1261,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(664, 500)</value>
+      <value>(1008, 540)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2519,7 +2133,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(88, 436)</value>
+      <value>(72, 312)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -2559,7 +2173,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>label1</key>
-      <value></value>
+      <value>Ignore me</value>
     </param>
     <param>
       <key>alpha10</key>
@@ -2679,7 +2293,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>name</key>
-      <value>""</value>
+      <value>"Ignore me, just obtaining space"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -2945,66 +2559,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>decim</key>
-      <value>r_decimation</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>fbw</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(600, 264)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>rational_resampler_xxx_0</value>
-    </param>
-    <param>
-      <key>interp</key>
-      <value>r_interpol</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>taps</key>
-      <value></value>
-    </param>
-    <param>
-      <key>type</key>
-      <value>ccc</value>
-    </param>
-  </block>
-  <block>
-    <key>rational_resampler_xxx</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>decim</key>
-      <value>512</value>
+      <value>samp_rate/2</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -3016,7 +2571,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(848, 528)</value>
+      <value>(776, 880)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3024,11 +2579,11 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>id</key>
-      <value>rational_resampler_xxx_0_0</value>
+      <value>rational_resampler_xxx_0_0_0</value>
     </param>
     <param>
       <key>interp</key>
-      <value>48/4</value>
+      <value>4160</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -3063,11 +2618,11 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>decim</key>
-      <value>48000</value>
+      <value>2</value>
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>fbw</key>
@@ -3075,7 +2630,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(824, 624)</value>
+      <value>(776, 792)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -3084,6 +2639,65 @@ But it also increases the time!</value>
     <param>
       <key>id</key>
       <value>rational_resampler_xxx_1</value>
+    </param>
+    <param>
+      <key>interp</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>taps</key>
+      <value>[]</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>fff</value>
+    </param>
+  </block>
+  <block>
+    <key>rational_resampler_xxx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>won't work, bug?</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>decim</key>
+      <value>samp_rate</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>fbw</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(568, 856)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>180</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>rational_resampler_xxx_1_0</value>
     </param>
     <param>
       <key>interp</key>
@@ -3162,14 +2776,32 @@ But it also increases the time!</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_complex_to_mag_0</source_block_id>
-    <sink_block_id>rational_resampler_xxx_1</sink_block_id>
+    <source_block_id>blocks_complex_to_mag_0_0</source_block_id>
+    <sink_block_id>rational_resampler_xxx_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_copy_0</source_block_id>
-    <sink_block_id>audio_sink_0</sink_block_id>
+    <source_block_id>blocks_complex_to_mag_0_0</source_block_id>
+    <sink_block_id>rational_resampler_xxx_1_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_file_source_0</source_block_id>
+    <sink_block_id>analog_wfm_rcv_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_file_source_0</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_file_source_0</source_block_id>
+    <sink_block_id>qtgui_waterfall_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3180,20 +2812,8 @@ But it also increases the time!</value>
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_float_to_complex_0</source_block_id>
-    <sink_block_id>qtgui_waterfall_sink_x_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_float_to_complex_0</source_block_id>
-    <sink_block_id>rational_resampler_xxx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_float_to_complex_1</source_block_id>
-    <sink_block_id>blocks_complex_to_mag_0</sink_block_id>
+    <source_block_id>blocks_float_to_complex_1_0</source_block_id>
+    <sink_block_id>blocks_complex_to_mag_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3210,14 +2830,8 @@ But it also increases the time!</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_multiply_const_vxx_0</source_block_id>
-    <sink_block_id>analog_wfm_rcv_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>blocks_multiply_const_vxx_0_0</source_block_id>
-    <sink_block_id>rational_resampler_xxx_0_0</sink_block_id>
+    <sink_block_id>blocks_float_to_complex_1_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3228,50 +2842,8 @@ But it also increases the time!</value>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_wavfile_source_0_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_wavfile_source_0_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
-    <source_key>1</source_key>
-    <sink_key>1</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>freq_xlating_fir_filter_xxx_0_0</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0</source_block_id>
-    <sink_block_id>freq_xlating_fir_filter_xxx_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0_0</source_block_id>
-    <sink_block_id>blocks_copy_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0_0</source_block_id>
-    <sink_block_id>blocks_wavfile_sink_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_0_0</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_0_0</sink_block_id>
+    <source_block_id>rational_resampler_xxx_0_0_0</source_block_id>
+    <sink_block_id>rational_resampler_xxx_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -3283,7 +2855,19 @@ But it also increases the time!</value>
   </connection>
   <connection>
     <source_block_id>rational_resampler_xxx_1</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>rational_resampler_xxx_1</source_block_id>
     <sink_block_id>qtgui_waterfall_sink_x_0_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>rational_resampler_xxx_1_0</source_block_id>
+    <sink_block_id>blocks_multiply_const_vxx_0_1</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
