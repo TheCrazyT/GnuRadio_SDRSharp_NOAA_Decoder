@@ -31,11 +31,11 @@ Relative_Center_Frequency = BW/2
 
 NOT_FOUND = True
 FOUND_IN_ROW = 0
-FIR_NEED = 3
+FIR_NEED = 4
 LAST_XFREQ = 0
-THRESHOLD = 1.1
+THRESHOLD = 1.01
 THRESHOLD2 = 0.5
-THRESHOLD3 = 0.01
+THRESHOLD3 = 0.1
 GAP_WIDTH = 1000
 pos = 0.0
 
@@ -105,7 +105,10 @@ class find_noa_freq_out(gr.basic_block):
             in_sig = [(np.float32,samp_rate)],
             out_sig = None
         )
-        os.remove("snapshot.txt")
+        try:
+            os.remove("snapshot.txt")
+        except:
+            pass
     
 
 
@@ -134,6 +137,8 @@ class find_noa_freq_out(gr.basic_block):
                     self.produce(0, lo)
                     return 0
             if(os.path.isfile("snapshot.txt")):
+                self.consume(0, l)
+                self.produce(0, lo)
                 return 0
             if ndcnt>=8:
                 concurrent.futures.wait(self.all_futures,return_when=ALL_COMPLETED)

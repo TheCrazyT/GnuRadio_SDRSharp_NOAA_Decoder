@@ -136,38 +136,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>Center_Frequency</value>
+      <value>Default_Center_Frequency</value>
     </param>
     <param>
       <key>value</key>
       <value>137622000</value>
-    </param>
-  </block>
-  <block>
-    <key>variable</key>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(168, 92)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>FrequencyStart</value>
-    </param>
-    <param>
-      <key>value</key>
-      <value>138063526-samp_rate/2</value>
     </param>
   </block>
   <block>
@@ -190,11 +163,11 @@
     </param>
     <param>
       <key>id</key>
-      <value>Relative_Center_Frequency</value>
+      <value>Default_Relative_Center_Frequency</value>
     </param>
     <param>
       <key>value</key>
-      <value>Total_Center_Frequency-Center_Frequency</value>
+      <value>Total_Center_Frequency-Default_Center_Frequency</value>
     </param>
   </block>
   <block>
@@ -221,7 +194,34 @@
     </param>
     <param>
       <key>value</key>
-      <value>FrequencyStart+samp_rate/2</value>
+      <value>138063526</value>
+    </param>
+  </block>
+  <block>
+    <key>variable</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(192, 92)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>band_bw</value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>1658400</value>
     </param>
   </block>
   <block>
@@ -286,7 +286,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>2048</value>
+      <value>192000</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -330,7 +330,7 @@
     </param>
     <param>
       <key>stop</key>
-      <value>100000</value>
+      <value>300000</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -623,7 +623,7 @@
     </param>
     <param>
       <key>value</key>
-      <value>-Relative_Center_Frequency</value>
+      <value>-Default_Relative_Center_Frequency</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -659,7 +659,7 @@
     </param>
     <param>
       <key>start</key>
-      <value>-Relative_Center_Frequency</value>
+      <value>-band_bw/2</value>
     </param>
     <param>
       <key>step</key>
@@ -667,7 +667,7 @@
     </param>
     <param>
       <key>stop</key>
-      <value>Relative_Center_Frequency</value>
+      <value>band_bw/2</value>
     </param>
     <param>
       <key>rangeType</key>
@@ -1062,7 +1062,7 @@
     </param>
     <param>
       <key>const</key>
-      <value>6500</value>
+      <value>12500000/qrate</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1074,11 +1074,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 588)</value>
+      <value>(640, 756)</value>
     </param>
     <param>
       <key>_rotation</key>
-      <value>0</value>
+      <value>180</value>
     </param>
     <param>
       <key>id</key>
@@ -1125,7 +1125,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(576, 644)</value>
+      <value>(448, 708)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1168,7 +1168,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 708)</value>
+      <value>(832, 652)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1199,7 +1199,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 748)</value>
+      <value>(832, 692)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1261,7 +1261,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1008, 540)</value>
+      <value>(640, 716)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1292,7 +1292,7 @@
     </param>
     <param>
       <key>bw</key>
-      <value>samp_rate</value>
+      <value>band_bw</value>
     </param>
     <param>
       <key>alias</key>
@@ -1882,7 +1882,7 @@
     </param>
     <param>
       <key>bw</key>
-      <value>samp_rate</value>
+      <value>band_bw</value>
     </param>
     <param>
       <key>alias</key>
@@ -2571,7 +2571,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 880)</value>
+      <value>(832, 824)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2630,7 +2630,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(776, 792)</value>
+      <value>(832, 736)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2771,7 +2771,7 @@
   </connection>
   <connection>
     <source_block_id>analog_wfm_rcv_0</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_0_0</sink_block_id>
+    <sink_block_id>blocks_float_to_complex_1_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2831,7 +2831,13 @@
   </connection>
   <connection>
     <source_block_id>blocks_multiply_const_vxx_0_0</source_block_id>
-    <sink_block_id>blocks_float_to_complex_1_0</sink_block_id>
+    <sink_block_id>blocks_multiply_const_vxx_0_1</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_multiply_const_vxx_0_0</source_block_id>
+    <sink_block_id>qtgui_freq_sink_x_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -2849,19 +2855,7 @@
   </connection>
   <connection>
     <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>blocks_multiply_const_vxx_0_1</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>qtgui_freq_sink_x_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>rational_resampler_xxx_1</source_block_id>
-    <sink_block_id>qtgui_waterfall_sink_x_0_1</sink_block_id>
+    <sink_block_id>blocks_multiply_const_vxx_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
