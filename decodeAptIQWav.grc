@@ -1678,7 +1678,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>bw</key>
-      <value>band_bw</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
@@ -2268,7 +2268,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>bw</key>
-      <value>band_bw</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
@@ -2491,7 +2491,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>bw</key>
-      <value>band_bw</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
@@ -2703,7 +2703,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>wintype</key>
-      <value>firdes.WIN_HANN</value>
+      <value>firdes.WIN_BLACKMAN_hARRIS</value>
     </param>
   </block>
   <block>
@@ -3181,12 +3181,6 @@ But it also increases the time!</value>
   </connection>
   <connection>
     <source_block_id>blocks_float_to_complex_0</source_block_id>
-    <sink_block_id>qtgui_waterfall_sink_x_0_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>blocks_float_to_complex_0</source_block_id>
     <sink_block_id>rational_resampler_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -3260,6 +3254,12 @@ But it also increases the time!</value>
   <connection>
     <source_block_id>rational_resampler_xxx_0</source_block_id>
     <sink_block_id>freq_xlating_fir_filter_xxx_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>rational_resampler_xxx_0</source_block_id>
+    <sink_block_id>qtgui_waterfall_sink_x_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

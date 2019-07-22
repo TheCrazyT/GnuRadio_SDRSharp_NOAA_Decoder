@@ -1292,7 +1292,7 @@
     </param>
     <param>
       <key>bw</key>
-      <value>band_bw</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
@@ -1882,7 +1882,7 @@
     </param>
     <param>
       <key>bw</key>
-      <value>band_bw</value>
+      <value>samp_rate</value>
     </param>
     <param>
       <key>alias</key>
