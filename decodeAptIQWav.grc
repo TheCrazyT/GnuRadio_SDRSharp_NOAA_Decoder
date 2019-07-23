@@ -388,7 +388,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1,3,1,1</value>
+      <value>1,2,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -482,7 +482,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1,1,1,1</value>
+      <value>0,1,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -556,7 +556,7 @@
     </param>
     <param>
       <key>gui_hint</key>
-      <value>2,1,1,1</value>
+      <value>0,2,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -600,7 +600,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>2,3,1,1</value>
+      <value>2,2,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -663,7 +663,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>2,2,1,1</value>
+      <value>2,1,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -789,7 +789,7 @@ But it also increases the time!</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>1,2,1,1</value>
+      <value>1,1,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
