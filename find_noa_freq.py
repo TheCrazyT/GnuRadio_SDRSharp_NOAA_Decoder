@@ -10,7 +10,6 @@ import os
 import sys
 sys.path.append(os.environ.get('GRC_HIER_PATH', os.path.expanduser('~/.grc_gnuradio')))
 
-from find_noa_block import find_noa_block  # grc-generated hier_block
 from gnuradio import blocks
 from gnuradio import eng_notation
 from gnuradio import gr
@@ -26,24 +25,31 @@ import numpy as np
 
 IQ_FILE = r"d:\Program Files (x86)\SDRSharp\NOAA15\SDRSharp_20190112_173333Z_138063526Hz_IQ.wav"
 samp_rate = 2048000
-BW = 819200
+BW = samp_rate
 Relative_Center_Frequency = BW/2
 
 NOT_FOUND = True
 FOUND_IN_ROW = 0
-FIR_NEED = 4
+FIR_NEED = 6
 LAST_XFREQ = 0
-THRESHOLD = 1.01
+THRESHOLD = 1.5
 THRESHOLD2 = 0.5
 THRESHOLD3 = 0.1
-GAP_WIDTH = 1000
+GAP_WIDTH = 4800
+SIG_WIDTH = 200
 pos = 0.0
 
 
 def upd_samp_rate(sr):
     global samp_rate
     samp_rate = sr
+    BW = samp_rate
 
+
+def max_sig(X,i,n,v):
+    startIdx = i+(n*2+v)*GAP_WIDTH
+    m = max(X[startIdx:startIdx+SIG_WIDTH])
+    return m
     
 def find_xfreq(in00,lpos):
     global samp_rate,THRESHOLD,THRESHOLD2,THRESHOLD3
@@ -61,11 +67,10 @@ def find_xfreq(in00,lpos):
         rpos += 1
         tcheck1 = True
         for n in range(0,4):
-            tcheck1 = tcheck1 and (X[i+(n*2)*GAP_WIDTH]>X[i+(n*2+1)*GAP_WIDTH]*THRESHOLD)
+            tcheck1 = tcheck1 and (max_sig(X,i,n,0)>max_sig(X,i,n,1)*THRESHOLD)
         for n in range(0,4):
-            tcheck1 = tcheck1 and (X[i+(n*2+1)*GAP_WIDTH]*THRESHOLD<X[i+(n*2+2)*GAP_WIDTH])
-        tcheck2 = (abs(X[i]-X[i+2*GAP_WIDTH])<X[i]*THRESHOLD2) and (abs(X[i+2*GAP_WIDTH]-X[i+4*GAP_WIDTH])<X[i+2*GAP_WIDTH]*THRESHOLD2) and (abs(X[i+4*GAP_WIDTH]-X[i+6*GAP_WIDTH])<X[i+4*GAP_WIDTH]*THRESHOLD2)
-        if tcheck1 and tcheck2:
+            tcheck1 = tcheck1 and (max_sig(X,i,n,1)*THRESHOLD<max_sig(X,i,n,2))
+        if tcheck1:
             found = True
             xfreq = i*BW/samp_rate-Relative_Center_Frequency
             if FOUND_IN_ROW != 0:
@@ -78,7 +83,7 @@ def find_xfreq(in00,lpos):
                     return True
                 print("\nFound xfreq: %d at %06.2f s [%09d | i:%d], you can now stop." % (xfreq,lpos/samp_rate,lpos+rpos,i))
                 for n in range(-16,16):
-                    print("%d: %f,%f" % (n,X[i+(n*2)*GAP_WIDTH],X[i+(n*2+1)*GAP_WIDTH]))
+                    print("%d: %f,%f" % (n,max_sig(X,i,n,0),max_sig(X,i,n,1)))
                 f = open("snapshot.txt","w+")
                 d = 0
                 for x in X:
