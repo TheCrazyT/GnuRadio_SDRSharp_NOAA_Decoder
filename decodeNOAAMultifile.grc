@@ -629,7 +629,7 @@ class blk(gr.sync_block):  # other base classes are basic_block, decim_block, in
         self.stopat = width*height
         self.folder = folder
         self.filename = filename
-        self.img = np.zeros(shape=(max_num_files,width*height),dtype=np.byte)
+        self.img = np.zeros(shape=(max_num_files,width*height),dtype=np.uint8)
         self.pos = np.zeros(shape=(max_num_files,),dtype=np.int)
         self.wroteFile = np.zeros(shape=(max_num_files,), dtype=bool)
         self.hasData = np.zeros(shape=(max_num_files,), dtype=bool)
