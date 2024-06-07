@@ -31,3 +31,5 @@ One model that finds the frequency of the signal in the Baseband and one that ac
 Other resources (not by me) about NOAA:
 
 https://www.cder.dz/download/Art7-1_1.pdf
+
+https://www.noaasis.noaa.gov/NOAASIS/pubs/Users_Guide-Building_Receive_Stations_March_2009.pdf
